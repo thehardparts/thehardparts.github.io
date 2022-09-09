@@ -1,4 +1,6 @@
-image: klakegg/hugo
+image: 
+  name: dsl.melexis.com:5000/klakegg/hugo
+  entrypoint: ["/bin/sh"]
 
 pages:
   script:
