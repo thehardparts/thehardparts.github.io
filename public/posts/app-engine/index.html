@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>App Engine | The Hard Parts</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="App engine App engine was one of the first SAAS offerings Google created. It&rsquo;s a true serverless solution, that allows you to focus on the code and minimizes the administration required.
+Currently App Engine comes in 2 flavors:
+ App engine standard App engine flex  In this document we will focus on App Engine standard, as App Engine flex has more or less been succeeded by Google Cloud Run.">
+    <meta name="generator" content="Hugo 0.98.0" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="App Engine" />
+<meta property="og:description" content="App engine App engine was one of the first SAAS offerings Google created. It&rsquo;s a true serverless solution, that allows you to focus on the code and minimizes the administration required.
+Currently App Engine comes in 2 flavors:
+ App engine standard App engine flex  In this document we will focus on App Engine standard, as App Engine flex has more or less been succeeded by Google Cloud Run." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thehardparts.github.io/posts/app-engine/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-09T12:01:04+02:00" />
+<meta property="article:modified_time" content="2022-06-09T12:01:04+02:00" />
+
+<meta itemprop="name" content="App Engine">
+<meta itemprop="description" content="App engine App engine was one of the first SAAS offerings Google created. It&rsquo;s a true serverless solution, that allows you to focus on the code and minimizes the administration required.
+Currently App Engine comes in 2 flavors:
+ App engine standard App engine flex  In this document we will focus on App Engine standard, as App Engine flex has more or less been succeeded by Google Cloud Run."><meta itemprop="datePublished" content="2022-06-09T12:01:04+02:00" />
+<meta itemprop="dateModified" content="2022-06-09T12:01:04+02:00" />
+<meta itemprop="wordCount" content="326">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="App Engine"/>
+<meta name="twitter:description" content="App engine App engine was one of the first SAAS offerings Google created. It&rsquo;s a true serverless solution, that allows you to focus on the code and minimizes the administration required.
+Currently App Engine comes in 2 flavors:
+ App engine standard App engine flex  In this document we will focus on App Engine standard, as App Engine flex has more or less been succeeded by Google Cloud Run."/>
+
+    
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        The Hard Parts
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">App Engine</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-06-09T12:01:04+02:00">June 9, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="app-engine">App engine</h1>
+<p>App engine was one of the first SAAS offerings Google created.
+It&rsquo;s a true serverless solution,  that allows you to focus on the code and minimizes the administration required.</p>
+<p>Currently App Engine comes in 2 flavors:</p>
+<ul>
+<li>App engine standard</li>
+<li>App engine flex</li>
+</ul>
+<p>In this document we will focus on App Engine standard,  as App Engine flex has more or less been succeeded by Google Cloud Run.</p>
+<h2 id="why">Why</h2>
+<ul>
+<li>Appengine allows you to focus on your code,  as all of the infrastructure is managed by Google.</li>
+<li>Your code is scalable,  as every new request is (theoretically) spawning a new instance.</li>
+</ul>
+<h2 id="install-the-google-cloud-sdk">Install the google cloud sdk</h2>
+<p>On mac:</p>
+<pre tabindex="0"><code>brew install google-cloud-sdk
+</code></pre><p>Now you should be able to login with gcloud:</p>
+<pre tabindex="0"><code>gcloud auth login
+</code></pre><p>And set the default GCP project:</p>
+<pre tabindex="0"><code>gcloud config set project ...
+</code></pre><h2 id="java">Java</h2>
+<h3 id="deploying-a-new-project-in-spring-boot">Deploying a new project in spring boot</h3>
+<h4 id="generate-a-new-project">Generate a new project</h4>
+<p>Goto <a href="https://start.spring.io">https://start.spring.io</a> and generate a new ( maven ) spring boot application.</p>
+<h4 id="configure-the-pomxml">Configure the pom.xml</h4>
+<p>Open the pom.xml,  and do the following steps:</p>
+<ul>
+<li>set packaging to war</li>
+<li>add the appengine-maven-plugin in build &gt; plugins</li>
+</ul>
+<pre tabindex="0"><code>            &lt;plugin&gt;
+                &lt;groupId&gt;com.google.cloud.tools&lt;/groupId&gt;
+                &lt;artifactId&gt;appengine-maven-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.4.2&lt;/version&gt;
+                &lt;configuration&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+</code></pre><h4 id="add-appengine-webxml-to-srcmainwebappweb-inf">Add appengine-web.xml to src/main/webapp/WEB-INF/</h4>
+<p>Remove the web.xml file,  and create a new appengine-web.xml file.</p>
+<pre tabindex="0"><code>&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;
+&lt;!--
+Copyright 2017 Google Inc.
+Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+--&gt;
+&lt;appengine-web-app xmlns=&#34;http://appengine.google.com/ns/1.0&#34;&gt;
+    &lt;threadsafe&gt;true&lt;/threadsafe&gt;
+    &lt;runtime&gt;java8&lt;/runtime&gt;
+    &lt;system-properties&gt;
+        &lt;property name=&#34;java.util.logging.config.file&#34; value=&#34;WEB-INF/classes/logging.properties&#34;/&gt;
+    &lt;/system-properties&gt;
+    &lt;service&gt;**the project name**&lt;/service&gt;
+    &lt;env-variables&gt;
+    &lt;/env-variables&gt;
+&lt;/appengine-web-app&gt;
+</code></pre><h4 id="deploy-a-test-application">Deploy a test application</h4>
+<p>After doing these changes you should be able to deploy your hello world application to google cloud:</p>
+<pre tabindex="0"><code>mvn install appengine:deploy
+</code></pre><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://thehardparts.github.io/" >
+    &copy;  The Hard Parts 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

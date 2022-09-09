@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Hard Parts</title>
+    <link>https://thehardparts.github.io/</link>
+    <description>Recent content on The Hard Parts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Sep 2022 13:20:36 +0200</lastBuildDate><atom:link href="https://thehardparts.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Topics</title>
+      <link>https://thehardparts.github.io/posts/topics/</link>
+      <pubDate>Fri, 09 Sep 2022 13:20:36 +0200</pubDate>
+      
+      <guid>https://thehardparts.github.io/posts/topics/</guid>
+      <description>topics for this blog team  how this content is created who is who how we work kanban  technology  when cloud, when on premise how to pick cloud technology app engine cloud run cloud functions kubernetes cloud storage bigquery firestore python kotlin gitlab ci  tooling  jean ralphio git slack jira intellij  products  postprocessing electronic wafermapping datalake  </description>
+    </item>
+    
+    <item>
+      <title>App Engine</title>
+      <link>https://thehardparts.github.io/posts/app-engine/</link>
+      <pubDate>Thu, 09 Jun 2022 12:01:04 +0200</pubDate>
+      
+      <guid>https://thehardparts.github.io/posts/app-engine/</guid>
+      <description>App engine App engine was one of the first SAAS offerings Google created. It&amp;rsquo;s a true serverless solution, that allows you to focus on the code and minimizes the administration required.
+Currently App Engine comes in 2 flavors:
+ App engine standard App engine flex  In this document we will focus on App Engine standard, as App Engine flex has more or less been succeeded by Google Cloud Run.</description>
+    </item>
+    
+  </channel>
+</rss>
