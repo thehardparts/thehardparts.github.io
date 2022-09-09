@@ -4,7 +4,7 @@ image:
 
 pages:
   script:
-  - hugo
+  - hugo -D
   artifacts:
     paths:
     - public
