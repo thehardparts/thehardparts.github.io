@@ -1,6 +1,6 @@
 image: 
   name: dsl.melexis.com:5000/klakegg/hugo
-  entrypoint: ["/bin/sh"]
+  entrypoint: [""]
 
 pages:
   script:
