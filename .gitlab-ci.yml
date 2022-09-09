@@ -1,6 +1,4 @@
-image: 
-  name: dsl.melexis.com:5000/klakegg/hugo
-  entrypoint: [""]
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
