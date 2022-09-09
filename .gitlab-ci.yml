@@ -2,6 +2,10 @@ image:
   name: dsl.melexis.com:5000/klakegg/hugo
   entrypoint: [""]
 
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  HUGO_ENV: production
+
 pages:
   script:
   - hugo -D
