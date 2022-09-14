@@ -43,5 +43,5 @@ tags:
 ## products
 
 - postprocessing
-- electronic wafermapping
+- [electronic wafermapping]({{< ref "electronic-wafermapping" >}})
 - datalake

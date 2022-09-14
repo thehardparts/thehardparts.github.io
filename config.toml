@@ -1,4 +1,4 @@
-baseURL = 'https://thehardparts.github.io/'
+baseURL = 'https://thehardparts.pages.melexis.com/thehardparts/'
 languageCode = 'en-us'
-title = 'The Hard Parts'
-theme = "ananke"
+title = 'The (H)ard Parts'
+theme = "paper"
