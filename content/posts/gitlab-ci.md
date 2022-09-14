@@ -3,7 +3,6 @@ title: "Gitlab Ci"
 date: 2022-09-09T14:26:09+02:00
 draft: true
 ---
-.TableOfContents
 
 # Why
 
@@ -15,7 +14,13 @@ Since we use Gitlab to store our source code, the logical solution to use is [Gi
 
 # What
 
-Whenever a new project is created we immediately set up a gitlab CI pipeline for it. This can usually be done before any code is written by just deploying a dummy application to the test env.
+Whenever a new project is created we immediately set up a gitlab CI pipeline for it. This can usually be done before any code is written by just deploying a dummy application to the test env. Configuration of the pipeline is done using the [.gitlab-ci.yml](https://docs.gitlab.com/ee/ci/yaml/) file which is placed in the root of the project.
+
+For a tutorial for creating a basic pipeline see [this](https://about.gitlab.com/blog/2020/12/10/basics-of-gitlab-ci-updated/).
+
+{{< toc >}}
+
+## Gitlab ci basics
 
 ## Default CI flow
 
@@ -135,8 +140,6 @@ curl -s --header "X-Vault-Token: $VAULT_TOKEN" -X GET https://vault.colo.elex.be
 {{< / highlight >}}
   
 
-## Other useful resources:
+## Other useful resources
 
-[Decide on which runner tag to use](https://cmdb.elex.be/products/gitlab-runner/user-manual#section-4)
-
-[gitlab-ci.yml reference](https://docs.gitlab.com/ee/ci/yaml/)
+[Which runner tag to use](https://cmdb.elex.be/products/gitlab-runner/user-manual#section-4)
