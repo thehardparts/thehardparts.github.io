@@ -7,7 +7,7 @@ author: Brecht Hoflack
 
 # Why
 The idea of this blog is to share the knowledge between the team(s).
-This should aide onboarding,  and also help as a reference.
+This should aid onboarding, and also help as a reference.
 
 # How
 This is a living document where changes can be added by the whole team.

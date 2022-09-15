@@ -36,6 +36,7 @@ tags:
 - jean ralphio
 - git
 - slack
+- cmdb
 - jira
 - intellij
 
