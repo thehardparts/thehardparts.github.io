@@ -1,6 +1,6 @@
 ---
 title: "Jira integrations"
-date: 2022-09-2214:25:15+02:00
+date: 2022-09-22T14:25:15+02:00
 draft: true
 ---
 
