@@ -94,19 +94,19 @@ In this tool you can do the same as described above; but in a graphical way. Als
 
 2. Next set up the authentication:
 
-    ![postman1](/postman1.png)
+    ![postman1](/thehardparts/postman1.png)
 
     Note in the headers section you'll find back your information encoded in authorization section of your request.
 
 3. Let's post our body:
 
-    ![postman2](/postman2.png)
+    ![postman2](/thehardparts/postman2.png)
 
     For more info about RESTful API's consult this [page](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
 4. Observe the response:
 
-    ![postman3](/postman3.png)
+    ![postman3](/thehardparts/postman3.png)
 
     Note that your response ends up in the 2xx response range; which means you got a succes response. Other response codes can indicatie other issues.  
     For example if you search for an issue which does not exist you'll get a 404 response. Not sure what the response code means? Look it up at https://http.cat/. 
