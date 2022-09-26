@@ -36,14 +36,16 @@ tags:
 - jean ralphio
 - git
 - slack
+- cmdb
 - jira
 - intellij
 
 ## products
 
 - postprocessing
-- electronic wafermapping
+- [electronic wafermapping]({{< ref "electronic-wafermapping" >}})
 - datalake
 
 ## processes
 - [wardley mapping]({{< ref "wardley_mapping" >}})
+
