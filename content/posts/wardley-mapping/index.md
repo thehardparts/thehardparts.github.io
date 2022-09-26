@@ -4,7 +4,6 @@ date: 2022-09-26T10:37:23+02:00
 draft: true
 ---
 
-# Wardley mapping
 Wardley mapping is a strategic mapping method invented by Simon Wardley.
 
 It's a strategic tool for mapping your capabilities and their dependencies for making more informed decisions.
