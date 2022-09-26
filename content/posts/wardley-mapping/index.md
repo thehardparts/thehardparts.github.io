@@ -1,5 +1,5 @@
 ---
-title: "Wardley_mapping"
+title: "Wardley mapping"
 date: 2022-09-26T10:37:23+02:00
 draft: true
 ---
