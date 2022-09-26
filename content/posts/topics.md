@@ -47,5 +47,5 @@ tags:
 - datalake
 
 ## processes
-- [wardley mapping]({{< ref "wardley_mapping" >}})
+- [wardley mapping]({{< ref "wardley-mapping" >}})
 
