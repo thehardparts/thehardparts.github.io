@@ -154,10 +154,10 @@ Unfortunately atlassian is no longer offering a maintained java library. Therefo
 
 Again; a lot of the http requests are abstracted away in simple method calls:
 
-    	val jiraUrl: String = System.getenv("BASE_URL")
-		val jiraUser: String = System.getenv("SCAR_API_USERNAME")
-		val jiraPassword: String = System.getenv("SCAR_API_PASSWORD")
-		jiraService = Config.createJiraService(jiraUrl, jiraUser, jiraPassword)
+        val jiraUrl: String = System.getenv("BASE_URL")
+        val jiraUser: String = System.getenv("SCAR_API_USERNAME")
+        val jiraPassword: String = System.getenv("SCAR_API_PASSWORD")
+        jiraService = Config.createJiraService(jiraUrl, jiraUser, jiraPassword)
 
         fun createJiraService(url: String, user: String, password: String): JiraService {
             val apiClient = ApiClient(RestTemplate())
@@ -176,12 +176,12 @@ Again; a lot of the http requests are abstracted away in simple method calls:
                 "summary" to "testje",
                 "description" to JiraService.CommentBodyBuilder("Test").build(),
                 "assignee" to mapOf("accountId" to "61e8022893885f00696a5e59")
-		)
+        )
 
-		val fieldMapping = IssueFieldsApi(apiClient).fields.associate { it.name to it.id }
+        val fieldMapping = IssueFieldsApi(apiClient).fields.associate { it.name to it.id }
 
-		values.forEach{ (key, value) -> map[fieldMapping[key] ?: throw Error("no key found for $key")] = value }
-		val issuesApi = IssuesApi(apiClient)
-		return issuesApi.createIssue(mapOf("fields" to map), false).key
-	}
+        values.forEach{ (key, value) -> map[fieldMapping[key] ?: throw Error("no key found for $key")] = value }
+        val issuesApi = IssuesApi(apiClient)
+        return issuesApi.createIssue(mapOf("fields" to map), false).key
+    }
 
