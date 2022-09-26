@@ -91,4 +91,5 @@ Every 2 weeks we report on the status of the things we did in the past week.
 # What is expected from you
 - Contact the rest of the team when you're stuck or when something is unclear
 - Critical thinking
+- Push for high quality code
 - Have fun
