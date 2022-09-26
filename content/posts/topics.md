@@ -44,3 +44,6 @@ tags:
 - postprocessing
 - electronic wafermapping
 - datalake
+
+## processes
+- [wardley mapping]({{< ref "wardley_mapping" >}})
