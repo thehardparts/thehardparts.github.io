@@ -38,11 +38,11 @@ Each capability is positioned depending on their visibility for the user,  and t
 
 > To make a map:
 > 
-> Identify the Users being served
-> Identify the Needs to be met (think of these as top-level Capabilities)
-> Identify the Capabilities needed to successfully meet those needs
-> Determine the stage of Evolution for each Capability by evaluating its characteristics (if it’s difficult to decide, try breaking the Capability down into multiple, smaller Capabilities)
-> Draw the complete value chain — User at the top, Needs and Capabilities underneath, with dependency relationships included and Capabilities placed in Stages I, II, III, or IV of Evolution
+> - Identify the Users being served
+> - Identify the Needs to be met (think of these as top-level Capabilities)
+> - Identify the Capabilities needed to successfully meet those needs
+> - Determine the stage of Evolution for each Capability by evaluating its characteristics (if it’s difficult to decide, try breaking the Capability down into multiple, smaller Capabilities)
+> - Draw the complete value chain — User at the top, Needs and Capabilities underneath, with dependency relationships included and Capabilities placed in Stages I, II, III, or IV of Evolution
 
 [Landscape](https://learnwardleymapping.com/landscape/)
 
