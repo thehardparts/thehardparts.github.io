@@ -43,6 +43,8 @@ Each capability is positioned depending on their visibility for the user,  and t
 > - Determine the stage of Evolution for each Capability by evaluating its characteristics (if it’s difficult to decide, try breaking the Capability down into multiple, smaller Capabilities)
 > - Draw the complete value chain — User at the top, Needs and Capabilities underneath, with dependency relationships included and Capabilities placed in Stages I, II, III, or IV of Evolution
 
+![Evolution characteristics](images/evolution.jpg)
+
 [Landscape](https://learnwardleymapping.com/landscape/)
 
 ## Climate
