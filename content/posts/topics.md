@@ -28,7 +28,7 @@ tags:
 - bigquery
 - firestore
 - python
-- kotlin
+- [kotlin]({{< ref "kotlin" >}})
 - gitlab ci
 
 ## tooling
