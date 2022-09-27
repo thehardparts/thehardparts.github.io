@@ -73,5 +73,6 @@ You can create objects which are basically Singletons in Java code.
 
 - [https://kotlinlang.org](https://kotlinlang.org)
 - [Functional programming with Kotlin](https://www.youtube.com/watch?v=eNe5Nokrjdg)
+- [Kotlin koans](https://play.kotlinlang.org/koans/overview)
 
 
