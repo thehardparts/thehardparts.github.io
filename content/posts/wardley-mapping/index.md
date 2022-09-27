@@ -92,3 +92,11 @@ More information:
 [Learn wardley mapping](https://learnwardleymapping.com)
 
 [Wardley maps](https://medium.com/wardleymaps)
+
+# Tools
+
+Use the [Wardley Mapping Canvas](https://thecanvasrevolution.com/product/wardley-mapping-canvas)
+
+![Wardley Mapping Canvas](images/wardley-mapping-canvas.png)
+
+Miro has a template for the Wardley Mapping Canvas.
