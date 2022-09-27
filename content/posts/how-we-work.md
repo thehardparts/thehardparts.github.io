@@ -1,7 +1,7 @@
 ---
 title: "How We Work"
 date: 2022-09-26T16:02:44+02:00
-draft: true
+draft: false
 ---
 
 In DPA we try to follow a lean and continuous improvement process.
