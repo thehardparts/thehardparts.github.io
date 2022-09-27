@@ -61,9 +61,22 @@ When an item is ready,  we assign a colleague to do code review.
 This enables sharing of knowledge,  and should bring everybody on the same level of code quality.
 You can assign a code review by setting a reviewer in the merge request of gitlab.
 
-Once a reviewer has been set,  slack our bot ( @jean-ralphio ) should automatically alert the assigned reviewer,  and set the jira ticket in the correct state.
+Once a reviewer has been set,  our slackbot ( @jean-ralphio [source](https://gitlab.melexis.com/cbs/gitlab-webhook-integrations/jean-ralphio-slackbot) ) should automatically alert the assigned reviewer,  and set the jira ticket in the correct state.
 
 If the reviewer has feedback,  the code should be updated,  and reviewed again.
+
+## Performing Code review
+You are alerted on slack when a merge request is assigned to you.
+
+To perform code review,  check if the code has been properly tested,  and if the coding style is up to standards.
+We are looking for descriptive,  self explaining code that is preferably functional.
+If you have remarks,  you can add these to the line in gitlab.
+
+When you are finished,  you can add a DONE comment to the merge request.
+This will trigger our slackbot to notify the developer to update the code.
+
+If the code is ok,  you can merge it into the master.
+This will deploy the code to uat.
 
 ## Deploying
 We rely on gitlab ci pipelines to automatically build,  test,  deploy and release.
@@ -89,6 +102,7 @@ There we all come up with things that were bad,  good,  and ideas for improvemen
 Every 2 weeks we report on the status of the things we did in the past week.
 
 # What is expected from you
+
 - Contact the rest of the team when you're stuck or when something is unclear
 - Critical thinking
 - Push for high quality code
