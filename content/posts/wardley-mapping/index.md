@@ -9,7 +9,7 @@ Wardley mapping is a strategic mapping method invented by Simon Wardley.
 It's a strategic tool for mapping your capabilities and their dependencies for making more informed decisions.
 
 One of the key thoughts behind Wardley mapping,  is that every capability evolves through competition.
-It starts from Genesis,  through Custom and Product till a capability is an Evolution.
+It starts from Genesis,  through Custom and Product till a capability is a Commodity.
 An example for this is electricity, that started as an experiment,  after which every company had its own mean of generating electricity,  which evolved to a couple of competing standards,  till the comodity it is today.
 
 Another trait of Wardley mapping is the fact that patterns can be discovered.
@@ -88,4 +88,15 @@ The last step is then to map the value chain you created on the evolution axis.
 More information: 
 
 [Crossing the stream by feeling the stones](https://www.youtube.com/watch?v=2IW9L1uNMCs&t=1107s)
+
 [Learn wardley mapping](https://learnwardleymapping.com)
+
+[Wardley maps](https://medium.com/wardleymaps)
+
+# Tools
+
+Use the [Wardley Mapping Canvas](https://thecanvasrevolution.com/product/wardley-mapping-canvas)
+
+![Wardley Mapping Canvas](images/wardley-mapping-canvas.png)
+
+Miro has a template for the Wardley Mapping Canvas.

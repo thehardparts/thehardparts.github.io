@@ -13,7 +13,7 @@ tags:
 
 - [how this content is created]({{< ref "how-this-content-is-created" >}})
 - who is who
-- how we work
+- [how we work]({{< ref "how-we-work" >}})
 - kanban
 
 ## technology
@@ -28,7 +28,7 @@ tags:
 - bigquery
 - firestore
 - python
-- kotlin
+- [kotlin]({{< ref "kotlin" >}})
 - gitlab ci
 
 ## tooling
