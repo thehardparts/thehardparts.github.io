@@ -21,7 +21,7 @@ This article will first give a short introduction on which usual deployment targ
 
 ## Kubernetes (local)
 
-Most melexis sites have a local [kubernetes](https://kubernetes.io/) cluster. This allows us to easily deploy linux containers on each site.
+Most Melexis sites have a local [kubernetes](https://kubernetes.io/) cluster. This allows us to easily deploy linux containers on each site.
 
 Getting access to the clusters the first time requires quite a bit of setup. See [this guide](https://cmdb.elex.be/products/kubernetes/User_manual.md#section-2) on CMDB. If you still get an accesdenied afterwards it might be that you need to be added to the CBS LDAP group.
 
@@ -85,6 +85,8 @@ In general: use Cloud Run or Cloud Functions, unless this isn't feasible for one
 Local kubernetes:
 
 In general only if the service needs to be accessible within a site even when the internet line is dead, or latency needs to be as low as possible,...
+
+Some examples are services that need to directly interface with manufacturing equipment, or are only dependent on oracle (which is deployed in Ieper/sensors).
 
 Diegem GKE:
 

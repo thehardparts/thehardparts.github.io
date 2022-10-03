@@ -26,7 +26,7 @@ It is required to install [gcloud](https://cloud.google.com/sdk/gcloud), the GCP
 
 Any form of infrastructure inside GCP projects is to be managed exclusively by terraform. For an overview of how we use terraform see the [relevant article]({{< ref "terraform.md" >}}))
 
-Within melexis we generally only use a small subset of the available services of GCP, this article aims to be a quick guideline on which services you will probably need to use and what for. However any other GCP service can also be considered for use in projects, if there is deemed to be a good enough use case for it. Nobody should be afraid of proposing the use of alternate services not mentioned in this document.
+Within Melexis we generally only use a small subset of the available services of GCP, this article aims to be a quick guideline on which services you will probably need to use and what for. However any other GCP service can also be considered for use in projects, if there is deemed to be a good enough use case for it. Nobody should be afraid of proposing the use of alternate services not mentioned in this document.
 
 {{< toc >}}
 
@@ -50,7 +50,6 @@ Example projects using Pub/Sub:
 - [dat-to-testevents](https://gitlab.melexis.com/cbs/datalake/dat-to-testevents/-/blob/master/terraform/pubsub.tf) (create topics and subcriptions with terraform)
 - [aggregate](https://gitlab.melexis.com/cbs/datalake/aggregate-for-parquet/-/blob/master/aggregator/src/main/kotlin/com/melexis/aggregateparquet/EventPublisher.kt#L48) (publish to topic)
 - [akaunto](https://gitlab.melexis.com/cbs/akaunto/-/blob/master/mailing_service_akaunto/mailing_service.py#L27) (get messages from pull subscription)
-
 
 ## Cloud storage
 
@@ -81,7 +80,7 @@ See [Deployment]({{< ref "deployment.md" >}})
 
 Within Melexis we usually use postgres databases locally, so in the cloud this is also the first choice. However a traditional database is not always the best choice for any architecture as it doesn't scale well and might be overly expensive if not much data is stored. So it should be checked to see if other services aren't more applicable. We don't tend to use much cloud SQL for new projects (although there are obviously still valid use cases), it is usually enabled for older projects that were migrated.
 
-Connecting from a local pc to cloud sql databases is usually done using the [cloud sql proxy](https://cloud.google.com/sql/docs/mysql/sql-proxy). Other connection options are listed in the same documentation, unix sockets for cloud sql dbs in the same project are provided for some services (appengine, cloud run,...). Also notable is that databases in the diegem and xservices projects are open for direct connections if you are on the melexis network.
+Connecting from a local pc to cloud sql databases is usually done using the [cloud sql proxy](https://cloud.google.com/sql/docs/mysql/sql-proxy). Other connection options are listed in the same documentation, unix sockets for cloud sql dbs in the same project are provided for some services (appengine, cloud run,...). Also notable is that databases in the diegem and xservices projects are open for direct connections if you are on the Melexis network.
 
 ## Bigquery
 
