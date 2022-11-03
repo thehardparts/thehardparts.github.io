@@ -1,7 +1,7 @@
 ---
 title: "Gitlab Ci"
 date: 2022-09-09T14:26:09+02:00
-draft: true
+draft: false
 ---
 
 # Why
